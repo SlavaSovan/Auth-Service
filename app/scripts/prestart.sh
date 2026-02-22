@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 
 set -e
 
 echo "Starting initialization..."
 
-if [ ! -f /app/certs/jwt-private.pem ]; then
+if [ ! -f /app/app/certs/jwt-private.pem ]; then
     echo "Generating JWT certificates..."
     mkdir -p /app/certs
     openssl genrsa -out /app/certs/jwt-private.pem 2048

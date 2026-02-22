@@ -18,5 +18,5 @@ RUN chmod +x ./app/scripts/prestart.sh
 
 EXPOSE 8000
 
-ENTRYPOINT [ "./app/scripts/prestart.sh" ]
+ENTRYPOINT ["sh", "/app/app/scripts/prestart.sh"]
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]

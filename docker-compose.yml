@@ -59,7 +59,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./certs:/app/certs
+      - ./certs:/app/app/certs
       - ./alembic:/app/alembic
     depends_on:
       pg:
